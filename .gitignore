@@ -12,7 +12,9 @@ build/
 
 # Environment
 .env
+# .env.example should NOT be ignored
 .env.*
+!.env.example
 
 # Conda
 *.conda
