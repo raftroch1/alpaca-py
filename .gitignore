@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment
+.env
+.env.*
+
+# Conda
+*.conda
+*.env
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store 
