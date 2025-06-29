@@ -1,0 +1,4 @@
+name: Alpaca_Options
+channels:
+  - defaults
+prefix: /Users/devops/opt/anaconda3/envs/Alpaca_Options
