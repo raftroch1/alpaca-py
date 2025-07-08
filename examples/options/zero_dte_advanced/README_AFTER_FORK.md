@@ -65,4 +65,38 @@ alpaca-py/
 - PRs should be clear, well-documented, and tested
 
 ---
-For questions or collaboration, open an issue or contact the maintainer. 
+For questions or collaboration, open an issue or contact the maintainer.
+
+## Cloning and Working with Submodules
+
+This repo uses the `alpaca-py` directory as a git submodule. To ensure you have all code (including the SDK) when cloning or updating, follow these steps:
+
+### Cloning the Repo (with Submodules)
+```bash
+git clone --recurse-submodules <your-repo-url>
+```
+- This will clone both your main repo and the `alpaca-py` submodule at the correct commit.
+
+### If You Already Cloned Without Submodules
+If you already cloned the repo and the `alpaca-py` folder is empty or missing, run:
+```bash
+git submodule update --init --recursive
+```
+- This will fetch and initialize the submodule(s).
+
+### When Pulling New Changes
+If you pull new changes that update the submodule pointer, also run:
+```bash
+git submodule update --recursive
+```
+
+### Summary Table
+| Action                | Command                                                      |
+|-----------------------|-------------------------------------------------------------|
+| Clone with submodules | `git clone --recurse-submodules <repo-url>`                 |
+| Init submodules later | `git submodule update --init --recursive`                   |
+| Update submodules     | `git submodule update --recursive`                          |
+
+**As long as you follow these steps, you will have no issues working with the repo and its submodule on any computer.**
+
+If you ever want to remove the submodule and make it a regular folder, see the git documentation or ask the maintainer for guidance. 
