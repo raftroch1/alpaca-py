@@ -1,0 +1,14 @@
+name: Alpaca_Options
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - ta-lib  # (optional, if available on conda-forge)
+  - pip:
+      - alpaca-py>=0.14.0,<1.0.0
+      - pandas>=1.5.3
+      - numpy>=1.21
+      - TA-Lib
+      - python-dotenv>=1.0.0

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -134,3 +135,32 @@ dmypy.json
 
 # Cloudflare stuff
 Cloudflare_CA.pem
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment
+.env
+# .env.example should NOT be ignored
+.env.*
+!.env.example
+
+# Conda
+*.conda
+*.env
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store 
+>>>>>>> strategy-risk-mgmt

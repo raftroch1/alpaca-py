@@ -1,0 +1,2 @@
+Agent Mode & Conda Usage:
+Always activate your Conda environment before running scripts or using agent mode:  conda activate Alpaca_Options
